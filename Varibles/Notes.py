@@ -1,1 +1,1 @@
-# Evelyn Chennault. Varible Notes
+# Evelyn Chennault, Varible Notes

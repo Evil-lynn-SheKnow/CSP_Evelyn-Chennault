@@ -1,8 +1,16 @@
 # Evelyn Chennault, Variables Practice - Python
 
+name = input("What is your name: ")
+
+school = input("Where do you go to for an education: ")
+
 subject = input("What is your favorite subject: ")
 
-name = input("What is your name: ")
+
+
+color = input("What is your favorite color: ")
+
+
 
 print(name, "really likes", subject)
 

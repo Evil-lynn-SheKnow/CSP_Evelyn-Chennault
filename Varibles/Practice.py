@@ -1,10 +1,6 @@
-# Evelyn Chennault, Varible Notes
-
-name = "Ms. LaRose"
+# Evelyn Chennault, Variables Practice - Python
 
 subject = input("What is your favorite subject: ")
-
-small_number = 4
 
 name = input("What is your name: ")
 

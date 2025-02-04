@@ -1,3 +1,4 @@
+// Evelyn Chennault, Practice C
 #include <stdio.h>
 
 char name[] = "Evelyn";

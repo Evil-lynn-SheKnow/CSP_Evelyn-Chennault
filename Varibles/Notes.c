@@ -1,4 +1,4 @@
-// Evelyn Chennault, TEMPLATE
+// Evelyn Chennault, Notes C
 #include <stdio.h>
 
 int main(void){

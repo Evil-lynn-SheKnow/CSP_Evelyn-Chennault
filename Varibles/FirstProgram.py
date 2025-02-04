@@ -1,4 +1,4 @@
-# Evelyn Chennault, First Program
+# Evelyn Chennault, First Program Python
 
 name = "Evelyn"
 

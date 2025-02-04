@@ -2,20 +2,11 @@
 
 #print(70+8)
 #print(70-8)
-#print(70*8)
 #print(70/8)
+#print(70*8)
+#print(70//8)
 #print(70**8)
-#print(70//8) #integer division returns just the whole number
-#print(70%8) #Modulo/Modulus/MOD return the remainder
 
-num = 4
+pi =3.1415926535
 
-print(num)
-
-num +=1
-
-print(num)
-
-num **=2
-
-print(num)
+print(f"{pi:.}")

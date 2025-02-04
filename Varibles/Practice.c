@@ -8,7 +8,7 @@ float pi;
 int main(void){
     printf("Welcome, what ius your name: \n");
     scanf("%s");
-    printf("How old ar you: \n")
+    printf("How old are you: \n")
     scanf("%d", &age);
     printf("Write as much of pi as you know: \n");
     scanf("%f", &pi)

@@ -1,4 +1,4 @@
-# Evelyn Chennault, Expressioms Notes Python
+# Evelyn Chennault, Expressions Notes Python
 
 #print(70+8)
 #print(70-8)

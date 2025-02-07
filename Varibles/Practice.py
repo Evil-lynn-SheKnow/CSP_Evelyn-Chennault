@@ -1,4 +1,4 @@
-# Evelyn Chennault, Variables Practice Python
+# Evelyn Chennault, Practice Python
 
 name = input("What is your name: ")
 

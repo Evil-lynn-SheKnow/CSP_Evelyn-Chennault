@@ -1,4 +1,4 @@
-# Evelyn Chennault, Varible Notes Python
+# Evelyn Chennault, Notes Python
 
 name = "Ms. LaRose"
 

@@ -8,7 +8,6 @@ int main(void){
     num = 4;
     //printf("%d\n", num);
     //printf("%f", equation);
-
-    printf("%.8f", pi);
+    //printf((int)6+9/2);
     return 0;
 }

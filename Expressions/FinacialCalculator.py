@@ -21,7 +21,7 @@ savings = float(input("How much money do you pay save? \n"))
 # calculate savings as 10% of income (income*.1) (varible)
 incomePercent = (income*.1)
 # calculate spending as income-savings-rent-utilites-groceries-transportation
-(income-savings-rent-utilies-groceries-transportation)
+leftOverMoney = (income-savings-rent-utilies-groceries-transportation)
 
 # calculate percent income of rent (rent/income*100) (varible)
 rentPerent = ((rent/income)*100)
@@ -36,8 +36,12 @@ savingsPercent = ((savings/income)*100)
 # calculate percent income of spending (spendings/income*100) (varible)
 spendingsPercent = ((spending/income)*100)
 
+# Ten percent of your income
+print(incomePercent, "is 10% of your income.")
+# Money left over after all the monthly spending and saving
+print(leftOverMoney, "is 10% of your income.")
 # Your rent is $XX.XX which is XX% of your income. (print)
-print("Your rent is", rent, "which is", incomePercent, "of your income.")
+print("Your rent is", rent, "which is", rentPercent, "of your income.")
 # Your utilities is $XX.XX which is XX% of your income. (print)
 print("Your utilies are", utilies, "which is", utilitesPercent, "of your income.")
 # Your groceries is $XX.XX which is XX% of your income. (print)

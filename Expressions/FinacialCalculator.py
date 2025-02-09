@@ -36,21 +36,21 @@ savingsPercent = ((savings/income)*100)
 # calculate percent income of spending (spendings/income*100) (varible)
 spendingsPercent = ((spending/income)*100)
 
-# Ten percent of your income
+# ten percent of your income
 print(incomePercent, "is 10% of your income.")
-# Money left over after all the monthly spending and saving
+# money left over after all the monthly spending and saving
 print(leftOverMoney, "is 10% of your income.")
-# Your rent is $XX.XX which is XX% of your income. (print)
+# your rent is $XX.XX which is XX% of your income. (print)
 print("Your rent is", rent, "which is", rentPercent, "of your income.")
-# Your utilities is $XX.XX which is XX% of your income. (print)
+# your utilities is $XX.XX which is XX% of your income. (print)
 print("Your utilies are", utilies, "which is", utilitesPercent, "of your income.")
-# Your groceries is $XX.XX which is XX% of your income. (print)
+# your groceries is $XX.XX which is XX% of your income. (print)
 print("Your groceries are", groceries, "which is", groceriesPercent, "of your income.")
-# Your transportation is $XX.XX which is XX% of your income. (print)print("Your rent is", rent, "which is", incomePercent, "of your income.")
+# your transportation is $XX.XX which is XX% of your income. (print)print("Your rent is", rent, "which is", incomePercent, "of your income.")
 print("Your transportation is", transportation, "which is", transportationPercent, "of your income.")
-# Your savings is $XX.XX which is XX% of your income. (print)
+# your savings is $XX.XX which is XX% of your income. (print)
 print("Your savings are", savings, "which is", , "of your income.")
-# Your spendings is $XX.XX which is XX% of your income. (print)
+# your spendings is $XX.XX which is XX% of your income. (print)
 print("Your spendings are", spendings, "which is", spendingsPercent, "of your income.")
 
 print("Thank you for trying me out! I hopee I helped with your finacial needs.")

@@ -44,4 +44,5 @@ int main(void){
     return 0;
 }
 
+// ending
 printf("Thank you and have a good day! I hope we meet again.")

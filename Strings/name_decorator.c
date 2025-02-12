@@ -1,13 +1,14 @@
 // Evelyn Chennault, Name Decorator C
 #include <stdio.h>
 
-char name[] = "Evelyn";
-int age = 15;
-float pi = 3.14;
+char name;
+char nameTwo;
+char nameThree;
 
 int main(void){
-    printf("Hello I am %s. I am %d years old. I like the number %f.\n", name);
-    printf("%d\n", age);
-    printf("%f\n", pi);
+    printf("Please type in your name: \n");
+    scanf("%s", &name);
+    printf("<<< %s >>>");
+   
     return 0;
 }

@@ -1,5 +1,7 @@
 # Evelyn Chennault, First Program Python
 
-name = "Evelyn"
+name = print("Hello. What is your name: ")
 
-subject = "CSP"
+subject = print("What is your favorite school subject: ")
+
+print("My name is", name, "and my favorite subject at school is", subject)

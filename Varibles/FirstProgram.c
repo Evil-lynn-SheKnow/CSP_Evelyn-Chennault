@@ -9,6 +9,6 @@ int main(void){
     printf("Welcome, what is your name: \n");
     scanf("%s", &name);
 
-    printf("Hello,")
+    printf("Hello, %s. I hope you enjoy your time on this computer!\n", name);
     return 0;
 }

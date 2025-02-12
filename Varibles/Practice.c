@@ -33,7 +33,7 @@ int main(void){
     scanf("%s", &color);
     printf("What did you eat for breakfast: \n");
     scanf("%s", &food);
-    printf("Hello I am %s. I am %d years old.\n", name, age);
+    printf("Hello, I am %s. I am %d years old.\n", name, age);
     printf("I go to %s. My favorite class is %s. I have %d class periods.\n", school, subject, periods);
     printf("The year is %d. There are %d days in a year.\n", year, days);
     printf("My eyes are %s. My favorite color is %s.\n", eyes, color);

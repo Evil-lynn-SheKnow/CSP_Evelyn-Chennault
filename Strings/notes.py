@@ -4,9 +4,9 @@
 
 # note = "Ms. LaRose's class"
 
-# name = input("What is your first name?\n")
+name = input("What is your first name?\n").strip().capitalize()
 
-# print(f"Hello, {name}. Welcome to my program!").strip().capitalize()
+print(f"Hello, {name}. Welcome to my program!")
 
 # print("This is your name: "+ name)
 

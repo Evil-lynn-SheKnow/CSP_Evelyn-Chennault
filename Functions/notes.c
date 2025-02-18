@@ -1,4 +1,4 @@
-//Evelyn Chennault, _ _ _ _ _ _ _ _
+//Evelyn Chennault, Functions Notes C
 #include <stdio.h>
 
 

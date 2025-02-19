@@ -3,14 +3,14 @@
 #include <string.h>
 
 //empty string varibles for user words (minimum 3)
-char place;
-char place2;
-char person;
-char verb;
-char verb2;
-char object;
-char object2;
-char emotion;
+char[] place;
+char[] place2;
+char[] person;
+char[] verb;
+char[] verb2;
+char[] object;
+char[] object2;
+char[] emotion;
 
 int main(void){
     //What the program is

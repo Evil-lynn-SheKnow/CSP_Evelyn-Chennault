@@ -6,7 +6,7 @@ char name;
 int main(void){
     printf("Please type in your name:\n");
     scanf("%s", &name);
-    printf("<<< %s >>>");
+    printf("<<<%s>>>");
    
     return 0;
 }

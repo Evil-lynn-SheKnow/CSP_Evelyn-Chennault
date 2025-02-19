@@ -1,16 +1,17 @@
 //Evelyn Chennault, Functions Notes C
 #include <stdio.h>
 
-int num;
-char name[50], place[50], verb[50];
+//int num;
+//char name[50], place[50], verb[50];
 
-void add(int numOne, int numTwo){
-    return numOne+numTwo;
+//void add(int numOne, int numTwo){
+    //return numOne+numTwo;
+//}
+
+void due(char assignment[50], char day[20]){
+    printf("The %s assignment is due %s.", assignment, day);
 }
 
-const char* word(type){
-    
-}
 
 int main(void){
     //printf("Please tell me a number:\n");
@@ -18,5 +19,8 @@ int main(void){
     //add(num,10);
     //add(1,8);
     //printf (add(72,5));
+    due("Fucntions Notes", "Today");
+    due("Hello World Update", "Tomorrow");
+    due("Fucntions Notes", "Friday");
     return 0;
 }

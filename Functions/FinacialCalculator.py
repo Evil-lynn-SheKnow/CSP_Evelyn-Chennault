@@ -4,16 +4,13 @@
 print("Hello, user. I am a finacial calculator. I will calculate your spendings and savings. Let's begin!\n")
 
 
-# ask what their income is (vaible an input)
+# user inputs
 income = float(input("What is your income?\n"))
-# ask what their rent is (vaible an input)
 rent = float(input("What is your rent?\n"))
-# ask what their utilies is (vaible an input)
 utilites = float(input("How much money do you pay for utilites?\n"))
-# ask what their groceries is (vaible an input)
 groceries = float(input("How much money do you pay for groceries?\n"))
-# ask what their transportation is (vaible an input)
 transportation = float(input("How much money do you pay for transportation?\n"))
+savings = 
 
 print("\n")
 
@@ -27,14 +24,18 @@ def info(cost, income, type):
     percent2 = utilites/income *100
     print(f"Your {type} is {cost:.2} which is {percent2}% of your income.")
 
-def info(cost, groceries, type):
-    percent3 = utilites/income *100
+def info(cost, income, type):
+    percent3 = groceries/income *100
     print(f"Your {type} is {cost:.2} which is {percent3}% of your income.")
 
-def info(cost, transportation, type):
-    percent4 = utilites/income *100
+def info(cost, income, type):
+    percent4 = transportation/income *100
     print(f"Your {type} is {cost:.2} which is {percent4}% of your income.")
 
 def info(cost, income, type):
-    percent5 = utilites/income *100
+    percent5 = savings/income *100
     print(f"Your {type} is {cost:.2} which is {percent5}% of your income.")
+
+def info(cost, income, type):
+    percent6 = spendings/income *100
+    print(f"Your {type} is {cost:.2} which is {percent6}% of your income.")

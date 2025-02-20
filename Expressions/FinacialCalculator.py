@@ -12,7 +12,7 @@ transportation = float(input("How much money do you pay for transportation?\n"))
 print("\n")
 
 savings = income*.1
-spendings = (rent+utilites+groceries+transportation)/income
+spendings = income-rent-utilites-groceries-transportation-savings
 
 
 rent_percent = (round(rent/income))*100

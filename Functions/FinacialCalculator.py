@@ -10,7 +10,7 @@ rent = float(input("What is your rent?\n"))
 utilites = float(input("How much money do you pay for utilites?\n"))
 groceries = float(input("How much money do you pay for groceries?\n"))
 transportation = float(input("How much money do you pay for transportation?\n"))
-savings = 
+savings = float()
 
 print("\n")
 

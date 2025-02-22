@@ -16,19 +16,19 @@ int main(void){
     //What the program is
     printf("This is a MadLib program.\nTo begin, you just answer the question with a single word. ");
     printf("Please type in a noun:\n");
-    scanf("%s", &place);
+    scanf("%s", place);
     printf("Type in another noun:\n");
-    scanf("%s", &place2);
+    scanf("%s", place2);
     printf("Type in a person's name:\n");
-    scanf("%s", &person);
+    scanf("%s", person);
     printf("Type in a verb:\n");
-    scanf("%s", &verb);
+    scanf("%s", verb);
     printf("Type in a object:\n");
-    scanf("%s", &object);
+    scanf("%s", object);
     printf("Type in another object:\n");
-    scanf("%s", &object2);
+    scanf("%s", object2);
     printf("Type in a emotion:\n");
-    scanf("%s", &emotion);
+    scanf("%s", emotion);
     //Print madlib
     printf("I was in my %s when my %s had %s me over to his room.", place, person, verb);
     printf("I when into my %s's room and he said to help him %s John, our cousin.", person, verb2);

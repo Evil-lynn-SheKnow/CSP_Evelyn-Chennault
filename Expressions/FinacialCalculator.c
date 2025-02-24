@@ -25,27 +25,21 @@ int main(void){
     float savings;
     printf("How much is in your savings account?\n");
     scanf("%f", &savings);
+    
     //ten percent of income
     float incomePercent = income*.1;
-
     //money left over after spendings and current savings
     float spendings = income-rent-utilities-groceries-transportation-savings;
-
     //math equations that are needed to calculate the percentages
     float rentPercent = rent/income*100;
-
     //calculate percent income of utilites (utilites/income*100) (varible)
     float utilitesPercent = utilities/income*100;
-
     //calculate percent income of groceries (groceries/income*100) (varible)
     float groceriesPercent = groceries/income*100;
-
     //calculate percent income of transportation (transportation/income*100) (varible)
     float transportationPercent = transportation/income*100;
-
     //calculate percent income of spending (savings/income*100) (varible)
     float savingsPercent = savings/income*100;
-
     //calculate percent income of spending (spendings/income*100) (varible)
     float spendingsPercent = spendings/income*100;
 
@@ -56,6 +50,7 @@ int main(void){
     printf("Your spendings on groceries is %f, which is %f of your income.", groceries, groceriesPercent);
     printf("Your spendings on transportation is %f, which is %f of your income.", transportation, transportationPercent);
     printf("You spend %f dollars monthly.", spendings);
+    
     //ending
     printf("Thank you and have a good day! I hope we meet again.");
     return 0;

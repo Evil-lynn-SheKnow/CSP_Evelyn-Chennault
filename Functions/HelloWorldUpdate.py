@@ -1,4 +1,4 @@
-#Evelyn Chennault - Hello World Update Python
+#Evelyn Chennault, Hello World Update Python
 
 print("Hello, user. Teach me some fun names! I need five!")
 

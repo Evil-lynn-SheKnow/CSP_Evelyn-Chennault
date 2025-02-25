@@ -14,7 +14,7 @@ utilites = info("utilites")
 groceries = info("groceries")
 transportation = info("transportation")
 
-rent_per = (round(rent/income*100))
+rent_per = round(rent/income*100)
 utilites_per = utilites/income*100
 groceries_per = groceries/income*100
 transport_per = transportation/income*100

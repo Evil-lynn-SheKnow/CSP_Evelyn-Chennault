@@ -1,14 +1,16 @@
 // Evelyn Chennault, Name Decorator C
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h>
+
+char greeting[50] = "Hello, ";
+char name[50];
 
 int main(void){
-    char name[50];
     printf("This is the name decorator.\n");
     printf("Please type in your name:\n");
-    scanf("%s", toupper(name));
+    scanf("%s", (name));
+    strcat(greeting, name);
     printf(">>-%s-->\n", name);
-   
+
     return 0;
 }

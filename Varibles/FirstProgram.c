@@ -1,11 +1,11 @@
 // Evelyn Chennault, First Program C
 #include <stdio.h>
 
-char name;
+char name[20];
 
 int main(void){
-    printf("Hello, user.");
-    printf("I am the computer program.");
+    printf("Hello, user.\n");
+    printf("I am the computer program.\n");
     printf("Welcome, what is your name: \n");
     scanf("%s", &name);
 

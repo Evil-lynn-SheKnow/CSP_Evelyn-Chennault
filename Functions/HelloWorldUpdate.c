@@ -1,4 +1,4 @@
-//Evelyn Chennault, _ _ _ _ _ _ _ _
+//Evelyn Chennault, Hello World Update C
 #include <stdio.h>
 
 

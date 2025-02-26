@@ -2,8 +2,9 @@
 #include <stdio.h>
 #include <string.h>
 
-char one[3] = ">>-";
-char two[3] = "-->";
+char one[15] = ">>-";
+char two[15] = "-->";
+char three[15] = " ";
 char name[50];
 
 
@@ -11,8 +12,8 @@ int main(void){
     printf("This is the name decorator.\n");
     printf("Please type in your name:\n");
     scanf("%s", (name));
-    strcat(one, name);
-    strcat(two)
+    printf("%s", strcat(one, name));
+    printf("%s", strcat(two, three));
 
     return 0;
 }

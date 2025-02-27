@@ -1,6 +1,6 @@
 //Evelyn Chennault, Conditional Notes C
 #include <stdio.h>
-#include <string.h> //Needed tp compare strings
+#include <string.h> //Needed to compare strings
 
 char name[10] = "Evelyn";
 int num[20];

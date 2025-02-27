@@ -1,5 +1,6 @@
 //Evelyn Chennault, Old Enough C
 #include <stdio.h>
+#include <string.h>
 
 int main(void){
     int num;

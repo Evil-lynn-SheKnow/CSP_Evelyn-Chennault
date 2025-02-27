@@ -7,10 +7,10 @@ int main(void){
     printf("I will ask you several questions. Please answer them in terms of US dollars. ");
 
     //questions for the user to fill out in order for the calculator to get the varibles
-    float income;
+    float round(income);
     printf("What is your income?\n");
     scanf("%f", &income);
-    float rent;
+    float round(rent);
     printf("What is your rent?\n");
     scanf("%f", &rent);
     float utilities;

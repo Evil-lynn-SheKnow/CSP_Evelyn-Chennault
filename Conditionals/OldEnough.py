@@ -8,11 +8,11 @@ print("\n")
 #If you can vote
 if num == 4 or num == 5:
     print("1. No")
-elif num == 6 or num == 7 or num == 8 or num == 9 or num == 10 or num == 11:
+elif num >= 6 and num <= 11:
     print("1. No")
-elif num == 12 or num == 13 or num == 14:
+elif num >= 12 and num <= 14:
     print("1. No")
-elif num == 15 or num == 16 or num == 17:
+elif num >= 15 and num <= 17:
     print("1. No")
 elif num >= 18:
     print("1. Yes")

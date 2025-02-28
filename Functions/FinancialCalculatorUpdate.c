@@ -13,7 +13,7 @@ int main(void){
     printf("Hello! I am a financial calculator. Let's begin! ");
     printf("I will ask you several questions. Please answer them in terms of US dollars. ");
 
-    //questions for the user to fill out in order for the calculator to get the variables
+    //user will fill out in order for the calculator to get the variables
     printf("What is your income?\n");
     scanf("%f", &income);
     printf("What is your rent?\n");

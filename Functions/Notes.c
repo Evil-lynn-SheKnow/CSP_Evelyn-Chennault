@@ -19,8 +19,8 @@ int main(void){
     //add(num,10);
     //add(1,8);
     //printf (add(72,5));
-    due("Fucntions Notes", "Today");
+    due("Functions Notes", "Today");
     due("Hello World Update", "Tomorrow");
-    due("Fucntions Notes", "Friday");
+    due("Functions Notes", "Friday");
     return 0;
 }

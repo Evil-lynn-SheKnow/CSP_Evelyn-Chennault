@@ -2,12 +2,29 @@
 #include <stdio.h>
 #include <math.h>
 
+float income;
+float rent;
+float utilities;
+float groceries;
+float transportation;
+float rentPercent;
+float utilitiesPercent;
+float groceriesPercent;
+float transportationPercent;
+
+void question(char subject){
+    printf("What is your", subject);
+}
+
+void calculations(float subject){
+    printf(subject/income*100);
+}
+
+void results(char subject, char percent){
+    printf("Your %s is %s percent of your income.", subject, percent);
+}
+
 int main(void){
-    float income;
-    float rent;
-    float utilities;
-    float groceries;
-    float transportation;
 
     //tells user what the program does
     printf("Hello! I am a financial calculator. Let's begin! ");
@@ -26,22 +43,27 @@ int main(void){
     scanf("%f", &transportation);
 
     float incomePercent = income*.1;
-    float rentPercent = rent/income*100;
-    float utilitiesPercent = utilities/income*100;
-    float groceriesPercent = groceries/income*100;
-    float transportationPercent = transportation/income*100;
+
+    calculations(rentPercent subject);
+    calculations(utilitiesPercent);
+    calculations(groceriesPercent);
+    calculations(transportationPercent);
+
     float savings = income*.1;
     float spendings = income-rent-utilities-groceries-transportation-savings;
 
 
     //all final calculations
+    results(rent, rentPercent);
+    results(utilities, utilitiesPercent);
+    results(groceries, groceriesPercent);
+    results(transportation, transportationPercent);
+    results(utilities, utilitiesPercent);
+
+
     printf("%f is 10 percent of your income.", incomePercent);
-    printf("Your rent is %f, which is %f of your income.", income, rentPercent);
-    printf("Your spendings on utilities is %f, which is %f of your income.", utilities, utilitiesPercent);
-    printf("Your spendings on groceries is %f, which is %f of your income.", groceries, groceriesPercent);
-    printf("Your spendings on transportation is %f, which is %f of your income.", transportation, transportationPercent);
     printf("You spend %f dollars monthly.", spendings);
-    printf("Your savings are 10% of your income, which is %f dollars.", savings);
+    printf("Your savings are 10 percent of your income, which is %f dollars.", savings);
     
     //ending
     printf("Thank you and have a good day! I hope we meet again.");

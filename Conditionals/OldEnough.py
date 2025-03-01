@@ -1,71 +1,67 @@
 #Evelyn Chennault, Old Enough Python
 
 print("Hello! I will determine if you can legally have certain privileges in the USA.")
+print("These privileges are able to\n1. Vote\n2. Get a learner's permit\n3. Drive\n4. Go to school")
 num = int(input("How old are you?\n"))
-
 print("\n")
 
 #If you can vote
-print("Can you legally vote in the USA?")
 if num == 4 or num == 5:
-    print("No votes for you yet.\n")
-elif num == 6 or num == 7 or num == 8 or num == 9 or num == 10 or num == 11:
-    print("Worry about other things right now. Just be a kid, kid.\n")
-elif num == 12 or num == 13 or num == 14:
-    print("You are not mature enough. In a few years, yes, but not now.\n")
-elif num == 15 or num == 16 or num == 17:
-    print("So close, and yet, so far...\n")
+    print("1. No")
+elif num >= 6 and num <= 11:
+    print("1. No")
+elif num >= 12 and num <= 14:
+    print("1. No")
+elif num >= 15 and num <= 17:
+    print("1. No")
 elif num >= 18:
-    print("You can vote! You better--we need more public opinion.\n")
+    print("1. Yes")
 else: 
-    print("You're so cute...wait in a decade and a half, kid.\n")
+    print("1. You're so cute...wait in a decade and a half, kid")
 
 
 #If you can get a learner's permit
-print("Can you get a learner's permit?")
 if num == 4 or num == 5:
-    print("No vroom-vroom yet.\n")
+    print("2. No")
 elif num == 6 or num == 7 or num == 8 or num == 9 or num == 10 or num == 11:
-    print("You are in elementary. Get real.\n")
+    print("2. No")
 elif num == 12 or num == 13 or num == 14:
-    print("Get older! That's an order, solider!\n")
+    print("2. No")
 elif num == 15 or num == 16 or num == 17 or num == 18:
-    print("You can get your permit now. That might be helpful, just a hunch.\n")
+    print("2. Yes")
 elif num >= 18:
-    print("You have exceeded your permit. Forget supervision! You roll solo.\n")
+    print("2. Yes")
 else: 
-    print("Child. You are a child. The road would be dangerous if you even dared to steer a car.\n")
+    print("2. The road would be dangerous if you even dared to steer a car")
 
 
 #If you can drive
-print("Can you get your driver's license?")
 if num == 4 or num == 5:
-    print("Leave the driving to the big kids.\n")
+    print("3. No")
 elif num == 6 or num == 7 or num == 8 or num == 9 or num == 10 or num == 11:
-    print("Dream on. It'll happen...eventually.\n")
+    print("3. No")
 elif num == 12 or num == 13 or num == 14:
-    print("Man. Just out of reach.\n")
+    print("3. No")
 elif num == 15 or num == 16 or num == 17:
-    print("You can start driving! Yay! Just watch out for black ice!!!\n")
+    print("3. Yes")
 elif num >= 18:
-    print("You can drive. If you can't drive or don't have a license, you have a problem.\n")
+    print("3. Yes")
 else: 
-    print("Stick with HotWheels and the movies. That's safer for everyone.\n")
+    print("3. Stick with HotWheels and the movies--that's safer for everyone")
 
 
 #If you can go to school
-print("Can you go to school?")
 if num == 4 or num == 5:
-    print("Almost!\n")
+    print("4. No")
 elif num == 6 or num == 7 or num == 8 or num == 9 or num == 10 or num == 11:
-    print("You can attend a school right now.\n")
+    print("4. Yes")
 elif num == 12 or num == 13 or num == 14:
-    print("Early teens have it easier than you think.\n")
+    print("4. Yes")
 elif num == 15 or num == 16 or num == 17:
-    print("You should be in high school. Welcome to the cursed world of essays and annotated biblographies!\n")
+    print("4. Yes")
 elif num == 18:
-    print("You are almost done with high school--onto college. Achive your drea job!\n")
+    print("4. Yes")
 elif num > 18:
-    print("You should be either in college or working or being a stay-at-home parent.\n")
+    print("4. Yes")
 else: 
-    print("Learn to walk, write, solve math problems, and then we'll talk.\n")
+    print("4. Learn to walk, write, solve math problems, and then we'll talk")

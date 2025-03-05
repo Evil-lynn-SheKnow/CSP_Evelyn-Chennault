@@ -26,8 +26,6 @@ while x < 10:
 #4. What are lists? 
     #A group of many things that are related
     #A varible that holds multiple values
-    #Array
-
 
 nums = [1,2,3,4,5,6,7,8]
 cousins = ["Riely","Brooklyn", "Tyson", "Troy", "Dylan", "Ruby"]
@@ -49,7 +47,6 @@ print(cousins)
 
 
 #6. How do you make for loops in Python? 
-    #
 for cousin in cousins:
     print(cousin)
 
@@ -58,7 +55,6 @@ for x in range(1,5):
 
 
 #7. How do you make while loops in Python?
-    #
 import random
 x = 1 #varible keeps count of my iteration
 goose = random.randint(1,20)

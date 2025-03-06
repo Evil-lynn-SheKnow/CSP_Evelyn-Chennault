@@ -5,9 +5,9 @@
 
 int main(void){
     char family[][50] = {"Russell", "Kristin", "Violet", "Steven"};
-    int mlength = sizeof(family)/sizeof(family[0]);
+    int ilength = sizeof(family)/sizeof(family[0]);
     int i;
-    for(i = 0;i < mlength; i++){
+    for(i = 0;i < ilength; i++){
         printf("Hello, %s\n", family[i]);
     }
     return 0;

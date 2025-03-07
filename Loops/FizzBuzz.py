@@ -1,13 +1,12 @@
 #Evelyn Chennault, FizzBuzz Python
 
-while x:
-    x = int(input("Type in a number between 1 and 100:\n"))
-    if x % 3 and x % 5 == 0:
-        print("FizzBuzz")
-    elif x % 3 == 0:
-        print("Fizz")
-    elif x % 5 == 0:
-        print("Buzz")
-    else: 
-        print(x)
-    x += 1
+ 
+for i in range(0, 101):  
+    if i % 3 == 0 and i % 5 == 0:  
+        print("FizzBuzz")  
+    elif i % 3 == 0:  
+        print("Fizz")  
+    elif i % 5 == 0:  
+        print("Buzz")  
+    else:  
+        print(i)  

@@ -12,16 +12,16 @@ float utilitiesPercent;
 float groceriesPercent;
 float transportationPercent;
 
-void question(char subject){
+float question(char subject){
+    float amount;
     printf("What is your", subject);
+    scanf("%f", &amount);
+    return amount;
 }
 
-void calculations(float subject){
-    printf(subject/income*100);
-}
-
-void results(char subject, char percent){
-    printf("Your %s is %s percent of your income.", subject, percent);
+void calculations(float amount, float income, char subject){
+    int percent = amount/income*100;
+    printf("Your %s is $%.2f, which is %d percent of your income.", subject, amount, percent);
 }
 
 int main(void){
@@ -31,40 +31,27 @@ int main(void){
     printf("I will ask you several questions. Please answer them in terms of US dollars. ");
 
     //user will fill out in order for the calculator to get the variables
-    printf("What is your income?\n");
-    scanf("%f", &income);
-    printf("What is your rent?\n");
-    scanf("%f", &rent);
-    printf("How much do you spend on utilities?\n");
-    scanf("%f", &utilities);
-    printf("How much do you spend on groceries?\n");
-    scanf("%f", &groceries);
-    printf("How much do you spend on transportation?\n");
-    scanf("%f", &transportation);
+    income = question("income?");
+    rent = question("rent?");
+    utilities = question("utilities?");
+    groceries = question("groceries?");
+    transportation = question("transportation?");
 
     float incomePercent = income*.1;
 
-    calculations(rentPercent subject);
-    calculations(utilitiesPercent);
-    calculations(groceriesPercent);
-    calculations(transportationPercent);
-
-    float savings = income*.1;
-    float spendings = income-rent-utilities-groceries-transportation-savings;
-
-
-    //all final calculations
-    results(rent, rentPercent);
-    results(utilities, utilitiesPercent);
-    results(groceries, groceriesPercent);
-    results(transportation, transportationPercent);
-    results(utilities, utilitiesPercent);
+    calculations(rent, income, "income");
+    calculations(utilities, income, "income");
+    calculations(groceries, income, "income");
+    calculations(transportation, income, "income");
+    
+    float incomePercent = income*.1;
+    float spendings = income-rent-utilities-groceries-transportation-incomePercent;
 
 
     printf("%f is 10 percent of your income.", incomePercent);
-    printf("You spend %f dollars monthly.", spendings);
-    printf("Your savings are 10 percent of your income, which is %f dollars.", savings);
-    
+    printf("Your savings are 10 percent of your income is $%f.", incomePercent);
+    printf("You have $%f left.", spendings);
+
     //ending
     printf("Thank you and have a good day! I hope we meet again.");
     return 0;

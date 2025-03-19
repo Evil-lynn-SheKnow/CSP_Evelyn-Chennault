@@ -15,5 +15,6 @@ int main(void){
         }else{
             printf(num);
         }
+    }
     return 0;
 }

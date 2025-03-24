@@ -1,7 +1,7 @@
 #Programming Final Game, Evelyn, Josy, Maisha Paredes, and Zoey Sosa.
 
 import random # the computer being able to put a random move (zoey sosa)
-# Initialize the board  (Josy)
+# Initialize the board --> Josy
 
 def play_game():
     print("Welcome to our game of tic tac toe!") 
@@ -35,26 +35,26 @@ def check_win(board, player):  #josy (the winning combinations, all the combos t
 
 #Evelyn Chennault --> Interaction with the player
 def make_move(player):    
-    slot = int(input(f"Player {player}, enter a slot (0-8): "))   
+    slot = int(input(f"Player {player}, enter a slot (1-9): "))   
     row = slot // 3  
     col = slot % 3  
   
-    if board[row][col] == 0:  #Checking if the cell is empty (josy)    
-        board[row][col] = player  #Updating the board  (josy)
+    if board[row][col] == 0:#Checking if the cell is empty (josy)    
+        board[row][col] = player#Updating the board (josy)
     else:    
         print("Cell already taken! Try again.")    
-        make_move(player)  #Ask again if the cell is taken    
+        make_move(player)#Ask again if the cell is taken    
 
-    for turn in range(9):  #Maximum 9 moves    
-        display_board(board)  #Show the current board    
+    for turn in range(9):#Maximum 9 moves    
+        display_board(board)#Show the current board    
         player = "X"
         if turn % 2 == 0:
             make_move({player})
         else:
-            print("O")  #Alternate players    
-            make_move(player)  #Make the player's move    
+            print("O")#Alternate players    
+            make_move(player)#Make the player's move    
   
-display_board(board)  #Show final board
+display_board(board)#Show final board
 
 
 

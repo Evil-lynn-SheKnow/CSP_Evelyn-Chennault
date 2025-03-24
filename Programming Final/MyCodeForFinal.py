@@ -5,7 +5,7 @@ import random # the computer being able to put a random move (zoey sosa)
 
 def play_game():
     print("Welcome to our game of tic tac toe!") 
-    #controls players turns and establishes tjhe b
+    #controls players turns and establishes the b
 board = [    
     [1, 2, 3],    
     [4, 5, 6],    
@@ -19,14 +19,14 @@ def display_board(board):
 
 def check_win(board, player):  #josy (the winning combinations, all the combos the user can do to win)
     winning_combinations = [  
-        [1, 2, 3],  
+        [1, 2, 3],
         [4, 5, 6],
-        [7, 8, 9],  
+        [7, 8, 9],
         [1, 4, 7],  # function called
-        [2, 5, 8],  
-        [3, 6, 9],  
-        [1, 5, 9],  #some tweaks on the numbers (zoey)
-        [3, 5, 7],    
+        [2, 5, 8],
+        [3, 6, 9],
+        [1, 5, 9], #some tweaks on the numbers (zoey)
+        [3, 5, 7] 
     ]  
     for combo in winning_combinations:  
         if board[combo[0]] == board[combo[1]] == board[combo[2]] == player:  
@@ -44,11 +44,12 @@ def make_move(player):
     else:    
         print("Cell already taken! Try again.")    
         make_move(player)  #Ask again if the cell is taken    
-       
+
     for turn in range(9):  #Maximum 9 moves    
         display_board(board)  #Show the current board    
         player = "X"
         if turn % 2 == 0:
+            make_move({player})
         else:
             print("O")  #Alternate players    
             make_move(player)  #Make the player's move    

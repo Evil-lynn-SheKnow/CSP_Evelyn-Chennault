@@ -5,7 +5,7 @@ import random # the computer being able to put a random move (zoey sosa)
 
 def play_game():
     print("Welcome to our game of tic tac toe!") 
-    #controls players turns and establishes tjhe b
+    #controls players turns and establishes the b
 board = [    
     [1, 2, 3],    
     [4, 5, 6],    

@@ -1,6 +1,7 @@
-# Programming Final Game, Evelyn, Josy, Maisha Paredes, and Zoey Sosa
+# Programming Final Game, Evelyn Chennault, Josy, Maisha Paredes, and Zoey Sosa
+
 import random  
-  
+  #initialize board Josy
 def display_board(board):  
     # Displaying the board  
     print("Current Board:")  
@@ -10,12 +11,12 @@ def display_board(board):
     print("-" * 9)  
     print(" | ".join(board[6:9]))  
   
-def check_win(board, player):  
+def check_win(board, player): #
     # Winning combinations  
     winning_combinations = [  
-        [0, 1, 2], [3, 4, 5], [6, 7, 8],  # Rows  
-        [0, 3, 6], [1, 4, 7], [2, 5, 8],  # Columns  
-        [0, 4, 8], [2, 4, 6]               # Diagonals  
+        [1, 2, 3], [4, 5, 6], [7, 8, 9],  # Row wins  
+        [1, 3, 6], [2, 5, 7], [3, 6, 9],  # Column wins
+        [1, 5, 9], [3, 5, 7]              #Diagonal wins
     ]  
     for combo in winning_combinations:  
         if board[combo[0]] == board[combo[1]] == board[combo[2]] == player:  
@@ -33,7 +34,7 @@ def play_game():
     player = "X"  # Starting player  
   
     while True:  
-        display_board(board)  
+        display_board(board)   #Zoey
         print(f"Player {player}'s turn.")  
   
         if player == "X":  

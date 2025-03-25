@@ -11,8 +11,7 @@ def display_board(board):       #josy did this board, and each print statement
     print("-" * 9)    
     print(" | ".join(board[6:9]))    
 
-#Evelyn Chennault completed these winning combinations
-def check_win(board, player):   
+def check_win(board, player):       #Evelyn completed these winning combinations
     winning_combinations = [    
         [0, 1, 2], [3, 4, 5], [6, 7, 8],  #row wins
         [0, 3, 6], [1, 4, 7], [2, 5, 8],  #the columnn wins  
@@ -20,7 +19,7 @@ def check_win(board, player):
     ]    
     for combo in winning_combinations:      #josy completed these conditionals and boolean statements
         if board[combo[0]] == board[combo[1]] == board[combo[2]] == player:    
-            return True    
+            return True     #Doesn't perform function when it is all lowercase
     return False    
   
 def computer(board):        #zoey completed this computer function that creates the computer that will do random moves in empty spaces
@@ -39,15 +38,17 @@ def play_game():        #zoey and josy worked together on this function
         move = int(input("Enter a number from 0 to 8:"))
     
     
-        if player == "X":       #<--maisha 
-            if move < 0 or move > 8:  
-                print("Invalid move! Choose a number between 0 and 8.")
-                
+        if player == "X":       # <--maisha 
+            while True: # (start a loop for an input josy and maisha) 
+                 move = int(input("Enter a number from 0 to 8: "))  # Ask for input 
+                if move < 0 or move > 8:  
+                    print("Invalid move! Choose a number between 0 and 8.")
             else:  
                 if board[move] == " ":  
                     board[move] = player  
                 else:  
-                    print("This cell is already taken. Try again.")      
+                    print("This cell is already taken. Try again.") 
+                     
                 continue        # these conditionals make sure the player does not take a square to do a move in a place they cannot go (maisha) 
         else:
             move = computer(board)    
@@ -64,6 +65,5 @@ def play_game():        #zoey and josy worked together on this function
             break    
     
         player = "O" if player == "X" else "X"    
-    
-#Start the game    
-play_game()  
+        
+play_game()     #Start the game

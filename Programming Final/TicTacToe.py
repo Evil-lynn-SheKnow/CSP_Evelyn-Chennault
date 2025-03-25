@@ -36,6 +36,7 @@ def play_game():    #zoey and josy worked together on this function
     while True:    #<-- maisha
         display_board(board)     
         print(f"\nPlayer {player}'s turn.")    #<--maisha and josy
+        move = int(input("Enter a number from 0 to 8:"))
     
     
         if player == "X":     #<--maisha 

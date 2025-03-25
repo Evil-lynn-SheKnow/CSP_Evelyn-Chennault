@@ -40,7 +40,6 @@ def play_game():        #zoey and josy worked together on this function
     
         if player == "X":       # <--maisha 
             while True: # (start a loop for an input josy and maisha) 
-                 move = int(input("Enter a number from 0 to 8: "))  # Ask for input 
                 if move < 0 or move > 8:  
                     print("Invalid move! Choose a number between 0 and 8.")
             else:  

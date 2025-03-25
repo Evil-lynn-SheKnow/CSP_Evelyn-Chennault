@@ -40,14 +40,12 @@ def play_game():    #zoey and josy worked together on this function
     
         if player == "X":     #<--maisha 
             if move < 0 or move > 8:  
-    print("Invalid move! Choose a number between 0 and 8.")  
-else:  
-    if board[move] == " ":  
-        board[move] = player  
-    else:  
-        print("This cell is already taken. Try again.")  
-            else:    
-                print("This cell already taken, you have to try again.")    
+                print("Invalid move! Choose a number between 0 and 8.")  
+            else:  
+                if board[move] == " ":  
+                    board[move] = player  
+                else:  
+                    print("This cell is already taken. Try again.")      
                 continue    # these conditionals make sure the player does not take a square to do a move in a place they cannot go (maisha) 
         else:
             move = computer(board)    

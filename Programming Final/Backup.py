@@ -37,7 +37,6 @@ def play_game():    #zoey and josy worked together on this function
         display_board(board)     
         print(f"\nPlayer {player}'s turn.")    #<--maisha and josy
     
-    
 while True:
     move = int(input("Enter a number from 0 to 8:"))  # Get input here  
     
@@ -48,29 +47,30 @@ while True:
     else:  
         board[move] = player  # Valid move  
         break  # Exit the loop
-    
-board[move] = player  
-player = "O" if player == "X" else "X"  # Switch player 
 
-
-    else:    
-        print("This cell already taken, you have to try again.")    
-        continue    # these conditionals make sure the player does not take a square to do a move in a place they cannot go (maisha) 
-    else:
-            move = computer(board)    
-            board[move] = player    
-            print(f"Computer's move: {move}")    
-    
-        if check_win(board, player):    #this conditional checks for a win (maisha)
-            display_board(board)    
-            print(f"Player {player} is the winner!")    
-            break    #this break statement stops the game if the player wins. (maisha)
-        if " " not in board:    
-            display_board(board)    
-            print("Oh! Looks like it's a tie!")    
-            break    
-    
-        player = "O" if player == "X" else "X"    
-    
-#Start the game    
-play_game()  
+while True:  # Main game loop  
+    board[move] = player    
+    player = "O" if player == "X" else "X"  # Switch player    
+  
+    if some_condition:  # Replace with the actual condition  
+        print("This cell is already taken. Try again.")  
+        continue  # Ensures the player does not take a square they can't move in    
+  
+    else:        
+        move = computer(board)        
+        board[move] = player        
+        print(f"Computer's move: {move}")        
+  
+    if check_win(board, player):  # Check for a win    
+        display_board(board)        
+        print(f"Player {player} is the winner!")        
+        break  # Stops the game if the player wins    
+  
+    if " " not in board:        
+        display_board(board)        
+        print("Oh! Looks like it's a tie!")        
+        break  # Stops the game if it's a tie    
+  
+    player = "O" if player == "X" else "X"  # Switch player again  
+ 
+ 

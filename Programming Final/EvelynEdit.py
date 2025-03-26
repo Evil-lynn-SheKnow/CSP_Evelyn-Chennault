@@ -1,69 +1,69 @@
 #Programming Final Game --> Evelyn Chennault, Josy Ramirez, Maisha Paredes, and Zoey Sosa. Python
 
-import random       #Evelyn edit :)
-print("Welcome to a game of tic-tac-toe!\n")
+import random  # For the computer's random moves  
   
-def display_board(board):       #josy did this board, and each print statement
-    print("BOARD:")    
-    print(" | ".join(board[0:3]))    
-    print("-" * 9)    
-    print(" | ".join(board[3:6]))    
-    print("-" * 9)    
-    print(" | ".join(board[6:9]))    
-
-def check_win(board, player):       #Evelyn completed these winning combinations
-    winning_combinations = [    
-        [0, 1, 2], [3, 4, 5], [6, 7, 8],  #row wins
-        [0, 3, 6], [1, 4, 7], [2, 5, 8],  #the columnn wins  
-        [0, 4, 8], [2, 4, 6]              #diagonal wins  
-    ]    
-    for combo in winning_combinations:      #josy completed these conditionals and boolean statements
-        if board[combo[0]] == board[combo[1]] == board[combo[2]] == player:    
-            return True     #Doesn't perform function when it is all lowercase
-    return False    
+def display_board(board):  
+    print("BOARD:")  
+    print(" | ".join(board[0:3]))  
+    print("-" * 9)  
+    print(" | ".join(board[3:6]))  
+    print("-" * 9)  
+    print(" | ".join(board[6:9]))  
   
-def computer(board):        #zoey completed this computer function that creates the computer that will do random moves in empty spaces
-    empty_spaces = [i for i in range(9) if board[i] == " "]    
-    return random.choice(empty_spaces)      #computer will make a random choice (zoey)
+def check_win(board, player):  
+    winning_combinations = [  
+        [0, 1, 2], [3, 4, 5], [6, 7, 8],  # Row wins  
+        [0, 3, 6], [1, 4, 7], [2, 5, 8],  # Column wins  
+        [0, 4, 8], [2, 4, 6]              # Diagonal wins  
+    ]  
+    for combo in winning_combinations:  
+        if board[combo[0]] == board[combo[1]] == board[combo[2]] == player:  
+            return True  
+    return False  
   
-def play_game():        #zoey and josy worked together on this function
-    print("Here's how to play--\nYou will take turns typing in a slot number to place your character.\n")       #Evelyn: descrption and how-to-play
-    print("You will be player X. \nLet's begin!\n")
-    board = [" " for _ in range(9)]     #starting the player off(josy)
-    player = "X"     
-    
-    while True:     #<-- maisha
-        display_board(board)     
-        print(f"\nPlayer {player}'s turn.")     #<--maisha and josy
-        move = int(input("Enter a number from 0 to 8:"))
-    
-    
-        if player == "X":       # <--maisha 
-            while True: # (start a loop for an input josy and maisha) 
-                if move < 0 or move > 8:  
-                    print("Invalid move! Choose a number between 0 and 8.")
-                    break
-                else:  
-                    if board[move] == " ":  
-                        board[move] = player  
-                    else:  
-                        print("This cell is already taken. Try again.") 
-                     
-                continue        # these conditionals make sure the player does not take a square to do a move in a place they cannot go (maisha) 
-        else:
-            move = computer(board)    
-            board[move] = player    
-            print(f"Computer's move: {move}")    
-    
-        if check_win(board, player):        #this conditional checks for a win (maisha)
-            display_board(board)    
-            print(f"Player {player} is the winner!")    
-            break       #this break statement stops the game if the player wins. (maisha)
-        if " " not in board:    
-            display_board(board)    
-            print("Oh! Looks like it's a tie!")    
-            break    
-    
-        player = "O" if player == "X" else "X"    
-        
-play_game()     #Start the game
+def computer(board):  
+    empty_spaces = [i for i in range(9) if board[i] == " "]  
+    return random.choice(empty_spaces)  
+  
+def play_game():  
+    board = [" " for _ in range(9)]  # Initialize the board  
+    print("Welcome to Tic Tac Toe!\n")  
+    print("You will be player X. Let's begin!\n")  
+  
+    player = "X"  # Starting player  
+  
+    while True:  
+        display_board(board)  # Show current board  
+        print(f"\nPlayer {player}'s turn.")  
+  
+        # Player move  
+        move = int(input("Enter a number from 0 to 8: "))      
+        if move < 0 or move > 8 or board[move] != " ":      
+            print("Invalid move! Try again.")  
+            continue  # Restart the loop for a valid move  
+  
+        board[move] = player  # Valid move  
+  
+        if check_win(board, player):  # Check for a win  
+            display_board(board)  # Show the board before announcing the winner  
+            print(f"Player {player} is the winner!")  
+            break  # Stop the game if the player wins  
+  
+        if " " not in board:  # Check for a tie  
+            display_board(board)  # Show the board before announcing the tie  
+            print("Oh! Looks like it's a tie!")  
+            break  # Stop the game if it's a tie  
+  
+        # Switch to computer's turn  
+        player = "O" if player == "X" else "X"  # Switch player  
+        move = computer(board)  # Computer makes a move  
+        board[move] = player  # Update board with computer's move  
+        print(f"Computer's move: {move}")  
+  
+        if check_win(board, player):  # Check for a win  
+            display_board(board)  # Show the board before announcing the winner  
+            print(f"Player {player} is the winner!")  
+            break  # Stop the game if the computer wins  
+  
+# Start the game  
+play_game()  

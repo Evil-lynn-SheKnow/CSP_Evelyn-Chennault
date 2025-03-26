@@ -3,13 +3,15 @@
 import random    #evelyn did the import random, this will help for the computer
 print("Welcome to a game of tic-tac-toe!\n")
   
-def display_board(board):    #josy did this board, and each print statement
-    print("BOARD:")    
-    print(" | ".join(board[0:3]))    
-    print("-" * 9)    
-    print(" | ".join(board[3:6]))    
-    print("-" * 9)    
-    print(" | ".join(board[6:9]))    
+def display_board(board):  
+    print("Debug: Inside display_board function.")  # Check if this prints  
+    print("BOARD:")  
+    print(" | ".join(board[0:3]))  
+    print("-" * 9)  
+    print(" | ".join(board[3:6]))  
+    print("-" * 9)  
+    print(" | ".join(board[6:9]))  
+
 
 #Evelyn Chennault completeted these winning combinations
 def check_win(board, player):   
@@ -27,50 +29,45 @@ def computer(board):   #zoey completed this computer function that creates the c
     empty_spaces = [i for i in range(9) if board[i] == " "]    
     return random.choice(empty_spaces)    #computer will make a random choice (zoey)
   
-def play_game():    #zoey and josy worked together on this function
-    print("Here's how to play--\nYou will take turns typing in a slot number to place your character.\n") #Evelyn: descrption and how-to-play
-    print("You will be player X. \nLet's begin!\n")
-    board = [" " for _ in range(9)]    #starting the player off(josy)
-    player = "X"     
-    
-    while True:    #<-- maisha
-        display_board(board)     
-        print(f"\nPlayer {player}'s turn.")    #<--maisha and josy
-    
-while True:
-    move = int(input("Enter a number from 0 to 8:"))  # Get input here  
-    
-    if move < 0 or move > 8:  
-        print("Invalid move! Choose a number between 0 and 8.")  
-    elif board[move] != " ":  
-        print("This cell is already taken. Try again.")  
-    else:  
+def play_game():  
+    print("Here's how to play--\nYou will take turns typing in a slot number to place your character.\n")  
+    print("You will be player X. \nLet's begin!\n")  
+    board = [" " for _ in range(9)]  # Initialize the board  
+    player = "X"  
+  
+    while True:  # Main game loop  
+        print("Debug: Displaying the board now.")  # Debugging statement  
+        display_board(board)  # Show the current board  
+        print(f"\nPlayer {player}'s turn.")  
+          
+        # Player move  
+        move = int(input("Enter a number from 0 to 8: "))    
+        if move < 0 or move > 8 or board[move] != " ":    
+            print("Invalid move! Try again.")  
+            continue  # Restart the loop for a valid move  
+          
         board[move] = player  # Valid move  
-        break  # Exit the loop
+          
+        if check_win(board, player):  # Check for a win  
+            display_board(board)  # Show the board before announcing the winner  
+            print(f"Player {player} is the winner!")  
+            break  # Stop the game if the player wins  
+          
+        if " " not in board:  # Check for a tie  
+            display_board(board)  # Show the board before announcing the tie  
+            print("Oh! Looks like it's a tie!")  
+            break  # Stop the game if it's a tie  
+          
+        player = "O" if player == "X" else "X"  # Switch player  
+  
+        # Computer move  
+        move = computer(board)  # Assume computer function is defined  
+        board[move] = player  # Computer makes a move  
+        print(f"Computer's move: {move}")  
+  
+        if check_win(board, player):  # Check for a win  
+            display_board(board)  # Show the board before announcing the winner  
+            print(f"Player {player} is the winner!")  
+            break  # Stop the game if the computer wins  
 
-while True:  # Main game loop  
-    board[move] = player    
-    player = "O" if player == "X" else "X"  # Switch player    
-  
-    if some_condition:  # Replace with the actual condition  
-        print("This cell is already taken. Try again.")  
-        continue  # Ensures the player does not take a square they can't move in    
-  
-    else:        
-        move = computer(board)        
-        board[move] = player        
-        print(f"Computer's move: {move}")        
-  
-    if check_win(board, player):  # Check for a win    
-        display_board(board)        
-        print(f"Player {player} is the winner!")        
-        break  # Stops the game if the player wins    
-  
-    if " " not in board:        
-        display_board(board)        
-        print("Oh! Looks like it's a tie!")        
-        break  # Stops the game if it's a tie    
-  
-    player = "O" if player == "X" else "X"  # Switch player again  
- 
  

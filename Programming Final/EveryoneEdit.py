@@ -37,11 +37,12 @@ def play_game():
     
         if player == "X":    
             move = int(input("Enter your move (0-8): "))    
-            if board[move] == " ":    
-                board[move] = player    
-            else:    
-                print("Cell already taken! Try again.")    
-                continue    
+            while move >= 0 or move <= 8:
+                if board[move] == " ":    
+                    board[move] = player    
+                else:    
+                    print("Cell already taken! Try again.")    
+                break    
         else:    
             move = computer(board)    
             board[move] = player    

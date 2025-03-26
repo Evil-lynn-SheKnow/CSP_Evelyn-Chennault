@@ -41,7 +41,8 @@ def play_game():
         if move < 0 or move > 8 or board[move] != " ":      
             print("Invalid move! Try again.")    
             continue  # Restart the loop for a valid move 
-         
+        if move == str:
+            print("Invalid move! Try again.") 
   
         board[move] = player  # Valid move  
   

@@ -22,48 +22,52 @@ def check_win(board, player):
     return False  
   
 def computer(board):  
-    empty_spaces = [i for i in range(9) if board[i] == " "]  
+    empty_spaces = [i for i in range(9) if board[i] == " "]  #zoey completed this computer function
     return random.choice(empty_spaces)  
   
 def play_game():  
     board = [" " for _ in range(9)]  # Initialize the board  
     print("Welcome to Tic Tac Toe!\n")  
     print("You will be player X. Let's begin!\n")  
-  
+      
     player = "X"  # Starting player  
   
-    while True:  
+    while True: # Evenlyn and Zoey worked on this
         display_board(board)  # Show current board  
-        print(f"\nPlayer {player}'s turn.")  
+        print("Player " + player + "'s turn.")  
   
-        # Player move  
-        move = int(input("Enter a number from 0 to 8: "))      
-        if move < 0 or move > 8 or board[move] != " ":      
-            print("Invalid move! Try again.")  
-            continue  # Restart the loop for a valid move  
-  
+        while True:  # Inner loop for input validation  
+            user_input = input("Enter a number from 0 to 8: ")  
+            try:  
+                move = int(user_input)  # Convert to integer  
+                if move < 0 or move > 8:  
+                    print("Invalid move! Please enter a number between 0 and 8.")  
+                elif board[move] != " ":  
+                    print("That cell is already taken! Choose another.")  
+                else:  
+                    break  # Valid move, exit the loop  
+            except ValueError:  
+                print("Invalid input! Please enter a valid number.")  
+          
         board[move] = player  # Valid move  
   
-        if check_win(board, player):  # Check for a win  
+        if check_win(board, player):  # Check for a win  # Maisha did this 
             display_board(board)  # Show the board before announcing the winner  
-            print(f"Player {player} is the winner!")  
+            print("Congratulations, " + player + "! You are the winner!")  
             break  # Stop the game if the player wins  
   
-        if " " not in board:  # Check for a tie  
+        if " " not in board:  # Check for a tie  # Maisha did this 
             display_board(board)  # Show the board before announcing the tie  
             print("Oh! Looks like it's a tie!")  
             break  # Stop the game if it's a tie  
   
-        # Switch to computer's turn  
+        # Switch to computer's turn  # josy did this
         player = "O" if player == "X" else "X"  # Switch player  
         move = computer(board)  # Computer makes a move  
         board[move] = player  # Update board with computer's move  
-        print(f"Computer's move: {move}")  
+        print("Computer's move is at position " + str(move) + ".")  # Announce computer's move  
   
-        if check_win(board, player):  # Check for a win  
+        if check_win(board, player):  # Check for a win  (josy did this)
             display_board(board)  # Show the board before announcing the winner  
-            print(f"Player {player} is the winner!")  
+            print("Congratulations, " + player + "! You are the winner!")  # Announce winner  
             break  # Stop the game if the computer wins  
-  
-# Start the game  
-play_game()  

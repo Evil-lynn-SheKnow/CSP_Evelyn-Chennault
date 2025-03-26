@@ -42,6 +42,7 @@ def play_game():        #zoey and josy worked together on this function
             while True: # (start a loop for an input josy and maisha) 
                 if move < 0 or move > 8:  
                     print("Invalid move! Choose a number between 0 and 8.")
+                    break
                 else:  
                     if board[move] == " ":  
                         board[move] = player  

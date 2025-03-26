@@ -30,6 +30,7 @@ def computer(board):   #zoey completed this computer function that creates the c
     return random.choice(empty_spaces)    #computer will make a random choice (zoey)
   
 def play_game():  
+    board = [" " for _ in range(9)]
     print("Here's how to play--\nYou will take turns typing in a slot number to place your character.\n")  
     print("You will be player X. \nLet's begin!\n")  
     board = [" " for _ in range(9)]  # Initialize the board  

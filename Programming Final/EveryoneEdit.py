@@ -31,30 +31,27 @@ def play_game():
     board = [" " for _ in range(9)]    
     player = "X"  # Starting player    
     
-    while True:    
-        display_board(board)     
-        print(f"Player {player}'s turn.")    
-    
-        if player == "X":    
-            move = int(input("Enter your move (0-8): "))    
-            while move >= 0 or move <= 8:
-                if board[move] == " ":    
-                    board[move] = player    
-                else:    
-                    print("Cell already taken! Try again.")    
-                break    
-        else:    
+    while True:  
+        try:  
+            move = int(input("Enter your move (0-8): "))  # checking if the move is valid (0-8)
+            if move < 0 or move > 8:  
+                print("Invalid input! Please enter a number between 0 and 8.")  
+                break  
+        except ValueError:  
+            print("Invalid input! Please enter a number.")  
+        break         # Check if the cell is empty and update the board here
+            else:    
             move = computer(board)    
             board[move] = player    
             print(f"Computer's move: {move}")    
     
-        if check_win(board, player):    
-            display_board(board)    
-            print(f"Player {player} wins!")    
+            if check_win(board, player):    
+                display_board(board)    
+                print(f"Player {player} wins!")    
             break    
-        if " " not in board:    
-            display_board(board)    
-            print("It's a tie!")    
+            if " " not in board:    
+                display_board(board)    
+                print("It's a tie!")    
             break    
     
         player = "O" if player == "X" else "X"    

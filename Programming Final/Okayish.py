@@ -4,7 +4,7 @@ import random  # For the computer's random moves
   
 def display_board(board):  
     print("BOARD:")  
-    print(" | ".join(board[0:3]))  
+    print(" | ".join(board[0:3]))  #josy did this board, and each print statement
     print("-" * 9)  
     print(" | ".join(board[3:6]))  
     print("-" * 9)  
@@ -14,7 +14,7 @@ def check_win(board, player):
     winning_combinations = [  
         [0, 1, 2], [3, 4, 5], [6, 7, 8],  # Row wins  
         [0, 3, 6], [1, 4, 7], [2, 5, 8],  # Column wins  
-        [0, 4, 8], [2, 4, 6]              # Diagonal wins  
+        [0, 4, 8], [2, 4, 6]              # Diagonal wins  (Evelyn did this)
     ]  
     for combo in winning_combinations:  
         if board[combo[0]] == board[combo[1]] == board[combo[2]] == player:  

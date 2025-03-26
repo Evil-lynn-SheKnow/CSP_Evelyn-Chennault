@@ -26,7 +26,7 @@ def computer(board):
     return random.choice(empty_spaces)  
   
 def play_game():  
-    board = [" " for _ in range(9)]  # Initialize the board  
+    board = [" " for _ in range(9)]  
     print("Welcome to Tic Tac Toe!\n")  
     print("You will be player X. Let's begin!\n")  
   
@@ -34,19 +34,20 @@ def play_game():
   
     while True:  
         display_board(board)  # Show current board  
-        print(f"\nPlayer {player}'s turn.")  
+        print("Player " + player + "'s turn.")  # Announce player turn  
   
         # Player move  
         move = int(input("Enter a number from 0 to 8: "))      
         if move < 0 or move > 8 or board[move] != " ":      
-            print("Invalid move! Try again.")  
-            continue  # Restart the loop for a valid move  
+            print("Invalid move! Try again.")    
+            continue  # Restart the loop for a valid move 
+         
   
         board[move] = player  # Valid move  
   
         if check_win(board, player):  # Check for a win  
             display_board(board)  # Show the board before announcing the winner  
-            print(f"Player {player} is the winner!")  
+            print("Congratulations, " + player + "! You are the winner!")  # Announce winner  
             break  # Stop the game if the player wins  
   
         if " " not in board:  # Check for a tie  
@@ -58,12 +59,9 @@ def play_game():
         player = "O" if player == "X" else "X"  # Switch player  
         move = computer(board)  # Computer makes a move  
         board[move] = player  # Update board with computer's move  
-        print(f"Computer's move: {move}")  
+        print("Computer's move is at position " + str(move) + ".")  # Announce computer's move  
   
         if check_win(board, player):  # Check for a win  
             display_board(board)  # Show the board before announcing the winner  
-            print(f"Player {player} is the winner!")  
+            print("Congratulations, " + player + "! You are the winner!")  # Announce winner  
             break  # Stop the game if the computer wins  
-  
-# Start the game  
-play_game()  

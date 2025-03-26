@@ -41,14 +41,14 @@ def play_game():    #zoey and josy worked together on this function
         if player == "X":     #<--maisha 
             move = int(input("It's your turn! (0-8): "))
             for move in range(0,8):  
-                if <=0 or >=8:  
+                if >=0 or <=8:  
                     print(f"{player}")  
                 elif not range(0,8):  #Evelyn worked on 
                     print("Invalid slot. Please type in a slot number:")    
-                if board[move] == " ":     #josy and maisha worked together here to complete any of the conditonals regarding the board
-                    board[move] = player    
-            else:    
-                print("This cell already taken, you have to try again.")    
+                    if board[move] == " ":     #josy and maisha worked together here to complete any of the conditonals regarding the board
+                        board[move] = player    
+                else:    
+                    print("This cell already taken, you have to try again.")    
                 continue    # these conditionals make sure the player does not take a square to do a move in a place they cannot go (maisha) 
         else:
             move = computer(board)    

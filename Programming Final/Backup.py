@@ -38,21 +38,25 @@ def play_game():    #zoey and josy worked together on this function
         print(f"\nPlayer {player}'s turn.")    #<--maisha and josy
     
     
-    while True:  
-        move = int(input("Enter a number from 0 to 8:"))  # Get input here  
-      
-        if move < 0 or move > 8:  
-            print("Invalid move! Choose a number between 0 and 8.")  
-        elif board[move] != " ":  
-            print("This cell is already taken. Try again.")  
-        else:  
-            board[move] = player  # Valid move  
-      break  # Exit the loop
+while True:
+    move = int(input("Enter a number from 0 to 8:"))  # Get input here  
+    
+    if move < 0 or move > 8:  
+        print("Invalid move! Choose a number between 0 and 8.")  
+    elif board[move] != " ":  
+        print("This cell is already taken. Try again.")  
+    else:  
+        board[move] = player  # Valid move  
+        break  # Exit the loop
+    
+board[move] = player  
+player = "O" if player == "X" else "X"  # Switch player 
 
-                else:    
-                    print("This cell already taken, you have to try again.")    
-                continue    # these conditionals make sure the player does not take a square to do a move in a place they cannot go (maisha) 
-        else:
+
+    else:    
+        print("This cell already taken, you have to try again.")    
+        continue    # these conditionals make sure the player does not take a square to do a move in a place they cannot go (maisha) 
+    else:
             move = computer(board)    
             board[move] = player    
             print(f"Computer's move: {move}")    

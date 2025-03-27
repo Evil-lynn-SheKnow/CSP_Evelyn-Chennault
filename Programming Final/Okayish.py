@@ -55,7 +55,7 @@ def play_game():      #josy worked together on this function
         #this checks for a win or tie after the users move (zoey did this)
         if check_win(board, player):    # 
             display_board(board)  #board before announcing the winner  zoey did this
-            print(f"Congrats and good for you, {player}! You are the winner, and theres no trophy but your opponents frown!")    
+            print(f"Congrats and good for you, {player}! You are the winner, and there's no trophy but your opponents frown!")    
             break  #this stops the game if the player wins (zoey did this)
          
         if " " not in board:  #checks for a tie (zoey)

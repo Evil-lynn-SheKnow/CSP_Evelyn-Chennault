@@ -9,14 +9,14 @@ def info(cost, income, type):
     print(f"your {type} is ${cost:.2f} rent which is,{percent}%, of your income")
 
 def user(type):
-    question = "what is your monthly " + type + "?\n"
+    question = "What is your " + type + "?\n"
     return float(input(question))
 
 income = user("income")
 rent = user("rent")
-utilities= user("utilities")
-groceries= user("groceries")
-transportation= user("transportation")
+utilities= user("utilities bill")
+groceries= user("groceries spendings")
+transportation= user("transportation cost")
 spending= rent+utilities+groceries+transportation
 savings = income*0.1
 

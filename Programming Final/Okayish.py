@@ -63,7 +63,7 @@ def play_game():      #josy worked together on this function
             print("Oh! Looks like it's a tie!")    
             break  #(zoey Stopping game if it's a tie    
  
-        # Computer's turn    #(josy did all below but zoey worked some on this part)
+        # Computer's turn    #(josy did all below but zoey worked a bit on this part below too)
         move = computer(board)  # Computer makes a move    
         board[move] = computer_player  # Updating board with computer's move    
         print(f"Computer's move is at position {move}.")
@@ -74,4 +74,4 @@ def play_game():      #josy worked together on this function
             print(f"Congratulations, {computer_player}! You are the winner!")  # Announce winner    
             break  # Stop the game if the computer wins    
      
-play_game()  # Start the game
+play_game()  #this starts the game 

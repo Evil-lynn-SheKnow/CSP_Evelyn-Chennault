@@ -37,38 +37,38 @@ def play_game():      #josy worked together on this function
         display_board(board)  #this displays the current board, maisha did this
         print(f"\nPlayer {player}'s turn.")    
  
-        while True:  #this is a loop for the player input maisha and josy did this
+        while True:  #this is a loop for the player input maisha did this
             user_input = input("Enter a number from 0 to 8!!: ")    
             try:    
                 move = int(user_input)  #this converts to an integer  maisha did this 
                 if move < 0 or move > 8:    
-                    print("Invalid move man! You gotta enter a number between 0 and 8.")    #evelyn did some of these conditionals and print statements as well as maisha
+                    print("Invalid move man! You gotta enter a number between 0 and 8.")    #maisha did some of these conditionals and print statements as well as maisha
                 elif board[move] != " ":    
                     print("That cell is already taken! Choose another.")    
                 else:    
-                    break  # This the loop (Evelyn)
+                    break  #this is the loop (maisha)
             except ValueError:    
-                print("Invalid input! Please enter a valid number.")  #Catch non-integer inputs    
+                print("Invalid input! Please enter a valid number!")  #this catches any inputs that arent numbers maisha did this 
  
-        board[move] = player  #user's move    
+        board[move] = player  #user's move  (zoey worked on this section,josy did a small bit here too)
  
-        # Check for win or tie after user move  
-        if check_win(board, player):    # Mashia  
-            display_board(board)  # board before announcing the winner    
-            print(f"Congratulations, {player}! You are the winner!")    
-            break  # Stop the game if the player wins    
+        #this checks for a win or tie after the users move (zoey did this)
+        if check_win(board, player):    # 
+            display_board(board)  #board before announcing the winner  zoey did this
+            print(f"Congrats and good for you, {player}! You are the winner, and theres no trophy but your opponents frown!")    
+            break  #this stops the game if the player wins (zoey did this)
          
-        if " " not in board:  # Check for a tie (zoey)
-            display_board(board)  # board before announcing the tie    
+        if " " not in board:  #checks for a tie (zoey)
+            display_board(board)  #board before announcing the tie    
             print("Oh! Looks like it's a tie!")    
             break  # Stopping game if it's a tie    
  
-        # Computer's turn    # zoey did this 
+        # Computer's turn    # (zoey did this)
         move = computer(board)  # Computer makes a move    
         board[move] = computer_player  # Updating board with computer's move    
         print(f"Computer's move is at position {move}.")
 
-        # Check for win after computer's move  # evelyn did this 
+        # Check for win after computer's move  # (josy did this )
         if check_win(board, computer_player):   
             display_board(board)  # Show the board before announcing the winner    
             print(f"Congratulations, {computer_player}! You are the winner!")  # Announce winner    

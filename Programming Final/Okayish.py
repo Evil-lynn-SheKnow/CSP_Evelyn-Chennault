@@ -42,15 +42,15 @@ def play_game():      #josy worked together on this function
             try:    
                 move = int(user_input)  #this converts to an integer  maisha did this 
                 if move < 0 or move > 8:    
-                    print("Invalid move man! You gotta enter a number between 0 and 8.")    #maisha did these conditionals and print statements
+                    print("Invalid move man! You gotta enter a number between 0 and 8.")    #evelyn did some of these conditionals and print statements as well as maisha
                 elif board[move] != " ":    
                     print("That cell is already taken! Choose another.")    
                 else:    
-                    break  #this exits the loop    
+                    break  # This the loop (Evelyn)
             except ValueError:    
-                print("Invalid input! Please enter a valid number.")  # Catch non-integer inputs    
+                print("Invalid input! Please enter a valid number.")  #Catch non-integer inputs    
  
-        board[move] = player  # User's move    
+        board[move] = player  #user's move    
  
         # Check for win or tie after user move  
         if check_win(board, player):    # Mashia  

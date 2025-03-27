@@ -50,7 +50,7 @@ def play_game():      #josy worked together on this function
             except ValueError:    
                 print("Invalid input! Please enter a valid number!")  #this catches any inputs that arent numbers maisha did this 
  
-        board[move] = player  #user's move  (zoey worked on this section,josy did a small bit here too)
+        board[move] = player  #user's move  (zoey worked on this section, josy did a small bit here too)
  
         #this checks for a win or tie after the users move (zoey did this)
         if check_win(board, player):    # 

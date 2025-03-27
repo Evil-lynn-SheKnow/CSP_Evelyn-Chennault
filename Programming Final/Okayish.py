@@ -33,16 +33,16 @@ def play_game():      #josy worked together on this function
     player = "X"  #this value ensures the user is always player X   (josy did this)
     computer_player = "O"  #this ensures the computer is always Player O  (josy did this)
  
-    while True:    # MAISHA did this
+    while True:    #maisha did this and EVELYN worked on this section together (all below until the except value error)
         display_board(board)  #this displays the current board, maisha did this
         print(f"\nPlayer {player}'s turn.")    
  
-        while True:  #this is a loop for the player input maisha did this
+        while True:  #this is a loop for the player input maisha  did this
             user_input = input("Enter a number from 0 to 8!!: ")    
             try:    
-                move = int(user_input)  #this converts to an integer  maisha did this 
+                move = int(user_input)  #this converts to an integer maisha and evelyn worked out errors togther here, took a while
                 if move < 0 or move > 8:    
-                    print("Invalid move man! You gotta enter a number between 0 and 8.")    #maisha did some of these conditionals and print statements as well as maisha
+                    print("Invalid move man! You gotta enter a number between 0 and 8.")    #maisha did some of these conditionals and print statements as well as evelyn
                 elif board[move] != " ":    
                     print("That cell is already taken! Choose another.")    
                 else:    
@@ -61,9 +61,9 @@ def play_game():      #josy worked together on this function
         if " " not in board:  #checks for a tie (zoey)
             display_board(board)  #board before announcing the tie    
             print("Oh! Looks like it's a tie!")    
-            break  # Stopping game if it's a tie    
+            break  #(zoey Stopping game if it's a tie    
  
-        # Computer's turn    # (zoey did this)
+        # Computer's turn    #(josy did all below but zoey worked some on this part)
         move = computer(board)  # Computer makes a move    
         board[move] = computer_player  # Updating board with computer's move    
         print(f"Computer's move is at position {move}.")

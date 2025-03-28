@@ -61,17 +61,17 @@ def play_game():      #josy worked together on this function
         if " " not in board:  #checks for a tie (zoey)
             display_board(board)  #board before announcing the tie    
             print("Oh! Looks like it's a tie!")    
-            break  #(zoey Stopping game if it's a tie    
+            break  #(zoey did this which is stopping the game if it's a tie    
  
-        # Computer's turn    #(josy did all below but zoey worked a bit on this part below too)
+        # Computer's turn    #(josy and zoey worked on the computers turn 
         move = computer(board)  # Computer makes a move    
         board[move] = computer_player  # Updating board with computer's move    
         print(f"Computer's move is at position {move}.")
 
-        # Check for win after computer's move  # (josy did this )
+        # Check for win after computer's move  
         if check_win(board, computer_player):   
             display_board(board)  # Show the board before announcing the winner    
-            print(f"Congratulations, {computer_player}! You are the winner!")  # Announce winner    
-            break  # Stop the game if the computer wins    
+            print(f"Congratulations, {computer_player}! you are the winner!")  #this announces the winner  
+            break  #this stops the game if the computer wins    
      
 play_game()  #this starts the game 

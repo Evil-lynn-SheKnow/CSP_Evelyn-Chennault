@@ -1,0 +1,8 @@
+*{
+    background-color: antiquewhite;
+    color:rgb(212, 120, 45);
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 400;
+    font-style: normal;  /*Not every computer can render every font, multiple options; start with the one we want; if more than one word, put in quotation marks*/ /*Families are rendered by one word*/
+
+}

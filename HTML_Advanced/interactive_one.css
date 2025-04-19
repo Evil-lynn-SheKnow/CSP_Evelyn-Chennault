@@ -1,0 +1,29 @@
+*{
+    background-color: antiquewhite;
+    color:rgb(212, 120, 45);
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 400;
+    font-style: normal;  /*Not every computer can render every font, multiple options; start with the one we want; if more than one word, put in quotation marks*/ /*Families are rendered by one word*/
+}
+p{/*Padding is the inside of the box and the margin is the outside of the box*/
+    background-color: rgba(255, 255, 255, 0.459);
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    margin: 8px; /*More options are top, bottom, left, right*/
+}
+#content{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+#main{
+    display: flex;
+    flex-wrap: wrap;
+}
+#img-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+img{
+    height: 200px;
+}

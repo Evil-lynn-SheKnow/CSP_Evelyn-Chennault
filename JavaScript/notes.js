@@ -5,10 +5,11 @@ function change(){
     if (counter <= images.length){
         document.getElementById("image").src = images[counter]
         counter += 1
-}else{
+    }else{
     counter = 0
     document.getElementById("image").src = images[counter]
-}}
+    }
+}
 
 function hello(){
     document.getElementById("title").innerHTML = "Hello World"

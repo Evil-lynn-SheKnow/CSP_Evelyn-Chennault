@@ -1,4 +1,4 @@
 function hello(){
-    document.getElementById("title").style.color = "blue"
-    
+    document.getElementById("title").innerHTML = "Hello World"
+
 }

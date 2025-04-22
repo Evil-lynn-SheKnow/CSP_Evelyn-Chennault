@@ -8,8 +8,7 @@ function change(){
 }else{
     counter = 0
     document.getElementById("image").src = images[counter]
-}
-}
+}}
 
 function hello(){
     document.getElementById("title").innerHTML = "Hello World"
@@ -19,4 +18,7 @@ function hover(){
 }
 function leave(){
     document.getElementById("image").src ="https://www.supercars.net/blog/wp-content/uploads/2016/03/2009_Chevrolet_CamaroSS2.jpg" 
+}
+function hidden(){
+    document.getElementById("meme").style.display = "block"
 }

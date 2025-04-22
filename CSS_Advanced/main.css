@@ -27,3 +27,8 @@ p{/*Padding is the inside of the box and the margin is the outside of the box*/
 img{
     height: 200px;
 }
+#img_container{
+    display: block;
+    margin:auto;
+    width: 200px;
+}

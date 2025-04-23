@@ -21,7 +21,9 @@ function hover(){
 function leave(){
     document.getElementById("image").src ="https://www.supercars.net/blog/wp-content/uploads/2016/03/2009_Chevrolet_CamaroSS2.jpg" 
 }
-
+function show(){
+    document.getElementById("lost").style.display
+}
 function pop(){
     window.alert("Really don't click that!")
 }

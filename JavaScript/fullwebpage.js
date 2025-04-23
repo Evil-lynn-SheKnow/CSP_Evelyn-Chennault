@@ -7,7 +7,7 @@
   
   function change(){
       if (counter <= images.length){
-          document.getElementById("img").src=images[counter] 
+          document.getElementById("main-img").src=images[counter] 
           counter +=1
       }
       else{

@@ -1,7 +1,7 @@
 //function hello(){
     //  document.getElementById("title").style.color = "orange"
   //}
-  let images = ["https://media.ed.edmunds-media.com/dodge/challenger/2023/oem/2023_dodge_challenger_coupe_gt_fq_oem_1_1600.jpg", "https://www.supercars.net/blog/wp-content/uploads/2016/03/2009_Chevrolet_CamaroSS2.jpg"]
+  let images = ["https://media.istockphoto.com/id/458595105/photo/row-of-new-chevrolet-camaro-cars-on-display.jpg?s=170667a&w=0&k=20&c=ekb9-D1kHYR1qf6E9OUbqLVNatCxUcEhuugdaNGqoGc=", "https://www.supercars.net/blog/wp-content/uploads/2016/03/2009_Chevrolet_CamaroSS2.jpg"]
   
   let counter = 0
   
@@ -22,7 +22,7 @@
   }
   
   function hover(){
-    document.getElementById("img").src = "https://media.ed.edmunds-media.com/dodge/challenger/2023/oem/2023_dodge_challenger_coupe_gt_fq_oem_1_1600.jpg"
+    document.getElementById("img").src = "https://media.istockphoto.com/id/458595105/photo/row-of-new-chevrolet-camaro-cars-on-display.jpg?s=170667a&w=0&k=20&c=ekb9-D1kHYR1qf6E9OUbqLVNatCxUcEhuugdaNGqoGc="
   }
   
   function leave(){

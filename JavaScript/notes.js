@@ -12,6 +12,7 @@ function change(){
 }
 
 function hello(){
+    let name = window.prompt("What your name?", "Car Lover")
     document.getElementById("title").innerHTML = "Hello World"
 }
 function hover(){
@@ -20,6 +21,7 @@ function hover(){
 function leave(){
     document.getElementById("image").src ="https://www.supercars.net/blog/wp-content/uploads/2016/03/2009_Chevrolet_CamaroSS2.jpg" 
 }
-function hidden(){
-    document.getElementById("meme").style.display = "block"
+
+function pop(){
+    window.alert("Really don't click that!")
 }

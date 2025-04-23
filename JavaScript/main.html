@@ -3,31 +3,28 @@
     <head>
         <meta charset="UTF-8">
         <title>JavaScript Notes</title>
-        <script src="note.js"></script>
+        <script src="notes.js"></script>
         <style>
-            body{
-                display:grid;
-                grid-template-columns: 1fr 1fr;
-            }
             img{
-                height:200px;
-                width:auto;
+                height: 200px;
+                width: auto;
             }
             #meme{
                 display: none;
             }
-            #lost{
-                display:none;
-            }
         </style>
     </head>
     <body>
-        <h1 id="title">JavaScript Notes</h1>
-        <p onclick="pop()">Dont' Click Me!</p>
+        <h1 id="title" onclick="hidden()">JavaScript Notes</h1>
         <button id="btn" onclick="hello()">Click Me!</button>
         <br>
-        <img id="image" onmouseover="change()" src="https://www.supercars.net/blog/wp-content/uploads/2016/03/2009_Chevrolet_CamaroSS2.jpg" alt="2009 SS Camaro">
+        <img id="img" 
+        onmouseover="change()"
+        src="https://www.pbs.org/wnet/nature/files/2014/10/HoneyBadger-Main-e1415392112925-1280x720.jpg" alt="honey badger">
         <br>
-        <img id="lost" src="https://www.kidney.org/sites/default/files/2025-01/gwy9g6s.jpg" alt="meme">
+        <img id="meme" src="https://learn.colincanhelp.com/wp-content/uploads/2024/08/img_2969-1.jpg" alt="dandelion">
     </body>
 </html>
+
+
+<!-- onmouseenter = "hover()" onmouseleave = "leave()

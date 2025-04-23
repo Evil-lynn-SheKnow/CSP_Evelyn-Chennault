@@ -6,7 +6,7 @@
   let counter = 0
   
   function change(){
-      if (counter images.length){
+      if (counter <= images.length){
           document.getElementById("img").src=images[counter] 
           counter +=1
       }

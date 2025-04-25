@@ -1,0 +1,10 @@
+*{
+    background-color: antiquewhite;
+    color:rgb(212, 120, 45);
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 400;
+    font-style: normal;  /*Not every computer can render every font, multiple options; start with the one we want; if more than one word, put in quotation marks*/ /*Families are rendered by one word*/
+}
+p{/*Padding is the inside of the box and the margin is the outside of the box*/
+    background-color: antiquewhite;
+}

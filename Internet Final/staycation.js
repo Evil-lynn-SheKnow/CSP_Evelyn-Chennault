@@ -1,7 +1,3 @@
-function hidden(){
-    document.getElementById("more").style.display = "block"
-}
-
 function view(){
     if(document.getElementById("more").style.display == "block"){
       document.getElementById("more").style.display = "none"

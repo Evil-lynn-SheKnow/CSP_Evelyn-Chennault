@@ -1,6 +1,9 @@
-*{
+body{
     background-color: antiquewhite;
     color:rgb(212, 120, 45);
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;  
+}
+#more{
+    display: none;
 }

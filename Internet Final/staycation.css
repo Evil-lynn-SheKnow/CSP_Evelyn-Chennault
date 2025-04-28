@@ -3,7 +3,21 @@ body{
     color:rgb(212, 120, 45);
     font-family: 'Times New Roman', Times, serif;
     font-style: normal;  
+    flex-direction: row;
+    flex-wrap: wrap;
+
 }
+
 #more{
     display: none;
+}
+
+#cntr{
+    text-align: center;
+}
+
+#cvr{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
 }

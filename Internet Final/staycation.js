@@ -15,21 +15,21 @@ function change(){
 function view(){
   if(document.getElementById("more").style.display == "block"){
     document.getElementById("more").style.display = "none"
-    document.getElementById("shw").innerHTML = "Personal Trip"
+    document.getElementById("shw").innerHTML = "Show More"
   }else{
     document.getElementById("more").style.display = "block"
-    document.getElementById("shw").innerHTML = "Hide Trip"
+    document.getElementById("shw").innerHTML = "Show Less"
   }
 
 }
 
 function change(){
-  if(document.getElementById("more").style.display == "block"){
-    document.getElementById("more").style.display = "none"
-    document.getElementById("shw").innerHTML = "Show More"
+  if(document.getElementById("experience").style.display == "block"){
+    document.getElementById("experience").style.display = "none"
+    document.getElementById("rvl").innerHTML = "Personal Trip"
   }else{
-    document.getElementById("more").style.display = "block"
-    document.getElementById("shw").innerHTML = "Show Less"
+    document.getElementById("experience").style.display = "block"
+    document.getElementById("rvl").innerHTML = "Hide Trip"
   }
 
 }

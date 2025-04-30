@@ -31,6 +31,9 @@ h1{
 #more{
     display: none;
 }
+#experience{
+    display: none;
+}
 #img{
     width: 50%;
 }

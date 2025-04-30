@@ -57,13 +57,15 @@ h1{
 #experience{
     display: none;
 }
+
+
 #personal{
     width: 25%;
     display: flex;
 }
-#cvr{
+/*#cvr{
     display: flex;
     flex-wrap: wrap;
     width: 50%;
-}
+}*/
 

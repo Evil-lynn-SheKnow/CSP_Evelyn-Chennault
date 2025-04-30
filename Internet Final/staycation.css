@@ -18,6 +18,9 @@ h1{
 #scene{
     float: left;
 }
+#geo{
+    width: 100%;
+}
 
 #flexbox_ex{
     display: flex;

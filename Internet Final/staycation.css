@@ -14,6 +14,7 @@ h1{
     margin-right: 16px;
 }
 #scene{
+    display: flexbox;
 }
 #geo{
     width: 100%;
@@ -38,6 +39,10 @@ h1{
 }
 #img{
     width: 50%;
+}
+#personal{
+    width: 25%;
+    display: flex;
 }
 #cvr{
     display: flex;

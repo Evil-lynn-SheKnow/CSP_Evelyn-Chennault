@@ -5,6 +5,11 @@ body{
     font-style: normal; 
     font-size: 18px;
 }
+#scene{
+    display: flex;
+    gap: 16px;
+    justify-content: start;
+}
 h1{
     font-size: 40px;
     font-weight: 200;
@@ -12,6 +17,7 @@ h1{
 }
 #hero_image{
     margin-right: 16px;
+    width: 50%;
 }
 #scene{
     display: flexbox;
@@ -19,26 +25,37 @@ h1{
 #geo{
     width: 100%;
 }
+
+
 #tours{
+    display: flex;
+    gap: 16px;
+    justify-content: start;
+}
+#climb{
+    width: 50%;
 }
 .attractions_list{
     width: 450px;
 }
 
-#flexbox_ex{
+/*#flexbox_ex{
     display: flex;
     gap: 16px;
     justify-content: start;
+}*/
+
+
+#shw, #rvl{
+    border-radius: 10px;
 }
+
 
 #more{
     display: none;
 }
 #experience{
     display: none;
-}
-#img{
-    width: 50%;
 }
 #personal{
     width: 25%;

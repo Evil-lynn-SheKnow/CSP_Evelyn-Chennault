@@ -11,18 +11,14 @@ h1{
     text-align: center;
 }
 #hero_image{
-    float: left;
-    display: block;
     margin-right: 16px;
 }
 #scene{
-    float: left;
 }
 #geo{
     width: 100%;
 }
 #tours{
-    clear: both;
 }
 .attractions_list{
     width: 200px;

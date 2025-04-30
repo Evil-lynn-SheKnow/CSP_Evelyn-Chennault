@@ -21,13 +21,15 @@ h1{
 #geo{
     width: 100%;
 }
-
-#flexbox_ex{
-    display: flex;
-    flex-wrap: nowrap;
+#tours{
+    clear: both;
 }
 .attractions_list{
     width: 200px;
+}
+#flexbox_ex{
+    display: flex;
+    flex-wrap: nowrap;
 }
 #more{
     display: none;

@@ -19,8 +19,12 @@ h1{
     float: left;
 }
 
+#flexbox_ex{
+    display: flex;
+    flex-wrap: nowrap;
+}
 .attractions_list{
-
+    width: 200px;
 }
 #more{
     display: none;

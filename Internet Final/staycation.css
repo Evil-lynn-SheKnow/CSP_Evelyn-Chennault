@@ -25,7 +25,8 @@ h1{
 }
 #flexbox_ex{
     display: flex;
-    flex-wrap: nowrap;
+    gap: 16px;
+    justify-content: start;
 }
 #more{
     display: none;

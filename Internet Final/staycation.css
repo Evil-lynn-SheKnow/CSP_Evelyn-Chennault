@@ -3,7 +3,7 @@ body{
     color:rgb(212, 120, 45);
     font-family: 'Helvetica', sans-serif;
     font-style: normal; 
-    font-size: 18px;
+    font-size: 20px;
 }
 #scene{
     display: flex;
@@ -66,13 +66,8 @@ h1{
 }
 
 
-#personal{
-    width: 25%;
-    display: flex;
-}
-/*#cvr{
+#one, #two{
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
-}*/
-
+}

@@ -35,6 +35,13 @@ h1{
 #climb{
     width: 50%;
 }
+.attractions_list{
+    display: flex;
+    gap: 16px;
+    justify-content: start;
+}
+
+
 /*.attractions_list{
     width: 450px;
 }*/

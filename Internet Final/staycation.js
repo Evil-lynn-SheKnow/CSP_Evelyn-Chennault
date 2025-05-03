@@ -14,7 +14,7 @@ function change(){
     }
 }
 
-function view(){
+function view1(){
   if(document.getElementById("more").style.display == "block"){
     document.getElementById("more").style.display = "none"
     document.getElementById("shw").innerHTML = "Show More"
@@ -25,7 +25,7 @@ function view(){
 
 }
 
-function view(){
+function view2(){
   if(document.getElementById("experience").style.display == "block"){
     document.getElementById("experience").style.display = "none"
     document.getElementById("rvl").innerHTML = "Personal Trip"

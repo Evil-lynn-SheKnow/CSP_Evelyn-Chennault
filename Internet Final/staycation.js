@@ -4,7 +4,7 @@ let two = ["https://i0.wp.com/soulsitemedia.com/wp-content/uploads/2019/11/kanab
   
 let counter = 0
     
-function rotate(){
+function change(){
     if (counter <= images.length){
         document.getElementById("img").src=images[counter] 
         counter +=1

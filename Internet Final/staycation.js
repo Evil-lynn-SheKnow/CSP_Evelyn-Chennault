@@ -4,7 +4,7 @@ let two = ["https://i0.wp.com/soulsitemedia.com/wp-content/uploads/2019/11/kanab
   
 let counter = 0
     
-function change(){
+function hover(){
     if (counter <= images.length){
         document.getElementById("hero_image").src=images[counter] 
         counter +=1
@@ -14,7 +14,7 @@ function change(){
     }
 }
 
-function view1(){
+function view(){
   if(document.getElementById("more").style.display == "block"){
     document.getElementById("more").style.display = "none"
     document.getElementById("shw").innerHTML = "Show More"
@@ -25,7 +25,7 @@ function view1(){
 
 }
 
-function view2(){
+function change(){
   if(document.getElementById("experience").style.display == "block"){
     document.getElementById("experience").style.display = "none"
     document.getElementById("rvl").innerHTML = "Personal Trip"

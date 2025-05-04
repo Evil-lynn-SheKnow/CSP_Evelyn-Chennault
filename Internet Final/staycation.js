@@ -1,19 +1,9 @@
-function location(){
-  document.getElementById("location").style.display = "block"
-}
-function hideLocation(){
-  document.getElementById("location").style.display = "none"
-}
-
-//function reset(){
-  //if (counter <= images.length){
-      //document.getElementById("trip").src=images[counter] 
-      //counter +=1
-  //}else{
-      //counter=0
-      //document.getElementById("trip").src=images[counter]
-  //}
-//}
+// function location(){
+//   document.getElementById("location_message").style.display = "block"
+// }
+// function hideLocation(){
+//   document.getElementById("location_message").style.display = "none"
+// }
 
 
 function change(){
@@ -26,3 +16,16 @@ function change(){
   }
 
 }
+
+
+
+//OLD NOTES
+//function reset(){
+  //if (counter <= images.length){
+      //document.getElementById("trip").src=images[counter] 
+      //counter +=1
+  //}else{
+      //counter=0
+      //document.getElementById("trip").src=images[counter]
+  //}
+//}

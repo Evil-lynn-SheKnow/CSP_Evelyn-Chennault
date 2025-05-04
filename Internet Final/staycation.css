@@ -63,10 +63,10 @@ h1{
     box-sizing: border-box;
     float: left;
 }
-#trip{
+#hero_image{
     max-width: 100%;
 }
-#sand_caves{
+#zion{
     width: 50%;
     position: relative;
 }

@@ -71,7 +71,7 @@ h1{
 }
 
 
-#one, #two{
+#trip{
     width: 50%;
     display: flex;
     flex-wrap: wrap;

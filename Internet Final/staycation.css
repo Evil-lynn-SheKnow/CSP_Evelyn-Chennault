@@ -2,14 +2,23 @@
 /* * {
     box-sizing: border-box;
 } */
+body{
+    background-color: antiquewhite;
+    color:rgb(212, 120, 45);
+    font-family: 'Helvetica', sans-serif;
+    font-style: normal; 
+    font-size: 20px;
+}
 #hero_image{
-    max-width: 100%;
-    float: left;
+    /* max-width: 100%;
+    float: left; */
+    width: 50%;
 }
 #image_container{
-    width: 50%;
+    /* width: 50%;
     position: relative;
-    float: left;
+    float: left; */
+    background-color: green;
 }
 #location_message{
     width: 100%;
@@ -20,17 +29,12 @@
     text-align: center;
     /* display: none; */
 }
-body{
-    background-color: antiquewhite;
-    color:rgb(212, 120, 45);
-    font-family: 'Helvetica', sans-serif;
-    font-style: normal; 
-    font-size: 20px;
-}
+
 #scene{
     display: flex;
     gap: 16px;
     justify-content: start;
+    background-color: blue;
 }
 /* #scene{
     display: flexbox;

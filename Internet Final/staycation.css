@@ -65,6 +65,9 @@ h1{
 }
 #experience{
     display: none;
+    display: flex;
+    gap: 16px;
+    justify-content: start;
 }
 
 

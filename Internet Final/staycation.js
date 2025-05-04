@@ -6,16 +6,15 @@
 // }
 
 
-function change(){
-  if(document.getElementById("experience").style.display == "block"){
-    document.getElementById("experience").style.display = "none"
-    document.getElementById("rvl").innerHTML = "Personal Trip"
-  }else{
-    document.getElementById("experience").style.display = "block"
-    document.getElementById("rvl").innerHTML = "Hide Trip"
-  }
-
-}
+// function change(){
+//   if(document.getElementById("experience").style.display == "block"){
+//     document.getElementById("experience").style.display = "none"
+//     document.getElementById("rvl").innerHTML = "Personal Trip"
+//   }else{
+//     document.getElementById("experience").style.display = "block"
+//     document.getElementById("rvl").innerHTML = "Hide Trip"
+//   }
+// }
 
 
 

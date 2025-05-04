@@ -76,7 +76,7 @@ h1{
     display: none;
 }
 #experience{
-    display: none;
+    /* display: none; */
     /*display: flex;
     gap: 16px;
     justify-content: start;*/

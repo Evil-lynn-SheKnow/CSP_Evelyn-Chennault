@@ -55,8 +55,8 @@ h1{
 
 #rvl{
     border-radius: 10px;
-    -webkit-text-fill-color: rgb(200, 155, 96);
-    color: rgb(255, 255, 255);
+    border-color: rgb(212, 120, 45);
+    -webkit-text-fill-color: rgb(212, 120, 45);
 }
 
 

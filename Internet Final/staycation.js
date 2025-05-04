@@ -4,22 +4,22 @@ let counter = 0
     
 function hover(){
     if (counter <= images.length){
-        document.getElementById("one").src=images[counter] 
+        document.getElementById("trip").src=images[counter] 
         counter +=1
     }else{
         counter=0
-        document.getElementById("one").src=images[counter]
+        document.getElementById("trip").src=images[counter]
     }
 }
-function reset(){
-  if (counter <= images.length){
-      document.getElementById("one").src=images[counter] 
-      counter +=1
-  }else{
-      counter=0
-      document.getElementById("one").src=images[counter]
-  }
-}
+//function reset(){
+  //if (counter <= images.length){
+      //document.getElementById("trip").src=images[counter] 
+      //counter +=1
+  //}else{
+      //counter=0
+      //document.getElementById("trip").src=images[counter]
+  //}
+//}
 
 
 function change(){

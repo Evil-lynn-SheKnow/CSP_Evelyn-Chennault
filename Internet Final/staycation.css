@@ -52,8 +52,6 @@ h1{
   gap: 16px;
   justify-content: start;
   margin-bottom: 16px;
-
-/*   background-color: green; */
 }
 #tours{
   width: 100%;
@@ -70,8 +68,6 @@ h1{
   gap: 16px;
   justify-content: start;
   margin-bottom: 16px;
-
-/*   background-color: yellow; */
 }
 
 
@@ -81,8 +77,6 @@ h1{
   gap: 16px;
   justify-content: start;
   margin-bottom: 16px;
-
-/*   background-color: pink; */
 }
 
 #rvl{
@@ -94,7 +88,7 @@ h1{
 
 #fourth_section{
   display: none;
-}
+} /*Hides the fourth section, needs to be separate to properly work*/
 
 #fourth_section{
   display: grid;
@@ -111,25 +105,3 @@ h1{
 #experience{
   width: 100%;
 }
-
-/* #fourth_section{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  justify-content: start;
-  margin-bottom: 16px;
-}
-#experience{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  justify-content: start;
-  margin-bottom: 16px;
-  display: none;
-
-/*   background-color: purple; */
-/* }
-#trip{
-  margin-right: 16px;
-  width: 100%;
-} */

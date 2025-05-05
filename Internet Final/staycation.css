@@ -1,9 +1,9 @@
 body{
-    background-color: antiquewhite;
-    color:rgb(212, 120, 45);
-    font-family: sans-serif;
-    font-style: normal; 
-    font-size: 20px;
+  background-color: antiquewhite;
+  color:rgb(212, 120, 45);
+  font-family: sans-serif;
+  font-style: normal; 
+  font-size: 20px;
 }
 h1{
   font-size: 40px;
@@ -41,13 +41,10 @@ h1{
   text-align: center;
   display: none;
 }
-#hero_image{
-  margin-right: 16px;
-  width: 100%;
-}
 #geo{
   width: 100%;
 }
+
 
 #second_section{
   display: grid;
@@ -55,8 +52,6 @@ h1{
   gap: 16px;
   justify-content: start;
   margin-bottom: 16px;
-  
-/*   background-color: green; */
 }
 #tours{
   width: 100%;
@@ -66,14 +61,13 @@ h1{
   width: 100%;
 }
 
+
 #third_section{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
   justify-content: start;
   margin-bottom: 16px;
-  
-/*   background-color: yellow; */
 }
 
 
@@ -83,37 +77,31 @@ h1{
   gap: 16px;
   justify-content: start;
   margin-bottom: 16px;
-  
-/*   background-color: pink; */
 }
 
 #rvl{
-    border-radius: 10px;
-    border-color: rgb(212, 120, 45);
-    -webkit-text-fill-color: rgb(212, 120, 45);
+  border-radius: 10px;
+  border-color: rgb(212, 120, 45);
+  -webkit-text-fill-color: rgb(212, 120, 45);
 }
 
 
-#more{
-    display: none;
-}
-#experience{
+#fourth_section{
+  display: none;
+} /*Hides the fourth section, needs to be separate to properly work*/
+
+#fourth_section{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
   justify-content: start;
   margin-bottom: 16px;
-  
-/*   background-color: purple; */
-}
-#rating{
-  width: 100%;
 }
 #trip{
-  margin-right: 16px;
+  grid-area: 1 / 1 / 2 / 2;
   width: 100%;
+  z-index: 10;
 }
-
 #experience{
-    display: none;
+  width: 100%;
 }

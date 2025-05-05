@@ -95,7 +95,24 @@ h1{
 #more{
   display: none;
 }
+
 #fourth_section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  justify-content: start;
+  margin-bottom: 16px;
+}
+#trip{
+  grid-area: 1 / 1 / 2 / 2;
+  width: 100%;
+  z-index: 10;
+}
+#experience{
+  width: 100%;
+}
+
+/* #fourth_section{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
@@ -111,8 +128,8 @@ h1{
   display: none;
 
 /*   background-color: purple; */
-}
+/* }
 #trip{
   margin-right: 16px;
   width: 100%;
-}
+} */
